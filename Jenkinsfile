@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Git Checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/Honeyoceanmtech/simple_project.git'
+        git branch: 'main', url: 'https://github.com/Honeyoceanmtech/wallpaper_cicd.git'
       }
     }
     stage('Deploy')

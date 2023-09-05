@@ -10,7 +10,7 @@ pipeline {
     {
       steps {
         echo "deploying the application wallpaper_cicd ...."
-        sh " docker-compose up"
+        sh " docker-compose up -f"
       }
     }
   }

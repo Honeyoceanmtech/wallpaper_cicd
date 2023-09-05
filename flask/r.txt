@@ -1,0 +1,4 @@
+flask_cors
+Flask
+pymongo
+pymongo[srv]

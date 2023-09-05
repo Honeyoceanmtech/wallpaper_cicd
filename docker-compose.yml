@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  flask:
+    restart: always
+    build: './flask'
+    ports:
+      - "1013:80"
+    

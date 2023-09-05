@@ -180,7 +180,7 @@ def wallpaper():
     except:
         return jsonify({'data':"Server Error"})
 
-@app.route('/hello', methods=['POST'])
+@app.route('/hello', methods=['GET'])
 def hello():
     return jsonify({'data':"Hello,..Server Error"})
     

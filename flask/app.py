@@ -179,19 +179,6 @@ def wallpaper():
             return jsonify({'category_name':category_name,'image_urls':image_urls})
     except:
         return jsonify({'data':"Server Error"})
-
-@app.route('/hellonew', methods=['GET'])
-def hellonew():
-    try:
-        return jsonify([
-                {'category_name':"Popular honey",'data':Popular_AI_Background},
-                {'category_name':"Tourism honey",'data':Tourism},
-                {'category_name':"Nature honey",'data':Nature},
-                {'category_name':"Wall Backdrop honey",'data':Wall_Backdrop},
-                {'category_name':"Birthday honey",'data':Birthday},
-            ])
-    except:
-        return jsonify({'data':"Server Error honey"})
     
 if __name__=="__main__":
     app.run(port=83,host="0.0.0.0",debug=True)

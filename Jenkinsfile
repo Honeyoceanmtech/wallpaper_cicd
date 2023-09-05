@@ -9,8 +9,8 @@ pipeline {
     stage('Deploy')
     {
       steps {
-        echo "deploying the application"
-        sh "docker -compose build"
+        echo "deploying the application wallpaper_cicd ...."
+        sh " docker-compose up"
       }
     }
   }
